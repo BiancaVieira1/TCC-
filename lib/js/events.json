@@ -1,0 +1,87 @@
+[
+ { 
+             "title": "Independência do Brasil", 
+              "start": "2022-09-07", 
+              "end": "2022-09-07", 
+              "color": "#48D1CC",
+              "textColor": "black"
+            },
+            {
+                "title": "Dia da Amazônia", 
+                "start": "2022-09-05", 
+                "end": "2022-09-05",
+                "color": "#48D1CC",
+                "textColor": "black"
+              },
+              {
+                "title": "Dia das Crianças", 
+                "start": "2022-10-12", 
+                "end": "2022-10-12",
+                "color": "#48D1CC",
+                "textColor": "black"
+              },
+              {
+                "title": "Dia da Nossa Senhora", 
+                "start": "2022-10-12", 
+                "end": "2022-10-12",
+                "color": "#48D1CC",
+                "textColor": "black"
+              },
+              {
+                "title": "Halloween", 
+                "start": "2022-10-31", 
+                "end": "2022-10-31",
+                "color": "#48D1CC",
+                "textColor": "black"
+              },
+              {
+                "title": "Proclamação da República", 
+                "start": "2022-11-15", 
+                "end": "2022-11-15",
+                "color": "#48D1CC",
+                "textColor": "black" 
+              },
+              {
+                "title": "Consciência Negra", 
+                "start": "2022-11-20", 
+                "end": "2022-11-20",
+                "color": "#48D1CC",
+                "textColor": "black"
+              },
+              {
+                "title": "Dia de Finados", 
+                "start": "2022-11-02", 
+                "end": "2022-11-02",
+                "color": "#48D1CC",
+                "textColor": "black"
+              },
+            {
+                "title": "Dia da Árvore", 
+                "start": "2022-09-21", 
+                "end": "2022-09-21",
+                "color": "#48D1CC",
+                "textColor": "black"
+              },
+              {
+                "title": "Véspera de Natal", 
+                "start": "2022-12-24", 
+                "end": "2022-12-24",
+                "color": "#48D1CC",
+                "textColor": "black" 
+              },
+              {
+                "title": "Natal", 
+                "start": "2022-12-25", 
+                "end": "2022-12-25",
+                "color": "#48D1CC",
+                "textColor": "black" 
+              },
+              {
+                "title": "Ano Novo", 
+                "start": "2022-12-31", 
+                "end": "2023-01-01",
+                "color": "#48D1CC",
+                "textColor": "black"
+              }
+
+            ]

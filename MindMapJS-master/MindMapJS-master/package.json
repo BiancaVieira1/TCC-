@@ -1,0 +1,37 @@
+{
+  "name"            : "MindMapJS",
+  "version"         : "0.1.2",
+  "description"	    : "Editor de mapas mentales en JavaScript",
+  "keywords"        : ["MindMap", "Editor"],
+  "homepage"        : "https://github.com/joseluismolinasoria/MindMapJS",
+  "author"          : "José Luis Molina Soria <joseluismolinasoria@gmail.com>",
+  "contributors"    : [
+    {
+        "name"  : "Juan Falgueras",
+    	"email" : "jfalgueras@uma.es"
+    }
+  ],
+  "repository"      : {
+    "type" : "git",
+    "url"  : "https://github.com/joseluismolinasoria/MindMapJS.git"  
+  },
+  "dependencies"    : {
+  },
+  "devDependencies" : {
+    "mocha" : "1.7.x",
+    "should" : "1.2.x",
+    "jsdoc" : "~3.2.0",  
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.5.4",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-replace": "~0.4.4",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-jsdoc": "~0.3.3",
+    "grunt-mocha-test" : "~0.4.0" 
+  },
+  "engines"         : {
+    "node" : "0.8.x" 
+  }, 
+  "main"            : "gruntfile.js"
+}

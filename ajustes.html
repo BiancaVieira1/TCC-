@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Ajustes </title>
+    <link rel="stylesheet" href="lib/css/ajustes.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/icon/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+   
+   
+        <i class='bx bx-menu' id="btn" ></i>
+
+     
+  <br>
+  <br>
+    <ul class="nav-list">
+      <li>
+        <a href="AreaUsuario.html">
+            <i class='bx bxs-graduation'></i>
+          <span class="links_name">Área do Usuário</span>
+        </a>
+         <span class="tooltip">Área do Usuário</span>
+      </li>
+      <li>
+       <a href="views/user/index.php">
+         <i class='bx bxs-time' ></i>
+         <span class="links_name">Cronograma </span>
+       </a>
+       <span class="tooltip">Cronograma Escolar</span>
+     </li>
+     <li>
+       <a href="Estudos.html">
+        <i class='bx bxs-notepad'></i>
+         <span class="links_name">Estudos</span>
+       </a>
+       <span class="tooltip">Estudos</span>
+     </li>
+     <li>
+       <a href="Chat.html">
+        <i class='bx bxs-message-rounded-dots'></i>
+         <span class="links_name">Chat Rápido</span>
+       </a>
+       <span class="tooltip">Chat Rápido</span>
+     </li>
+     <li>
+       <a href="Biblioteca.html">
+        <i class='bx bxs-book'></i>
+         <span class="links_name">Biblioteca </span>
+       </a>
+       <span class="tooltip">Biblioteca</span>
+     </li>
+<br>
+<br>
+<br>
+<br>
+
+
+     <li>
+        <a href="ajustes.html">
+            <i class='bx bxs-cog bx-tada' ></i>
+          <span class="links_name">Ajustes </span>
+        </a>
+        <span class="tooltip">Ajustes</span>
+      </li>
+      <li>
+        <a href="login.html">
+          <i class='bx bx-log-out' style='color:#141313' onclick="funcaoSair()"></i>
+          <span class="links_name"><f onclick="funcaoSair()"> Sair</f></span>
+        </a>
+        <span class="tooltip">Sair</span>
+      </li>
+     
+      <script>
+        function funcaoSair()
+        {
+        alert("Você voltará para a tela de login!");
+        }
+        </script>
+            
+    
+
+    </ul>
+  </div>
+ 
+  <section class="home-section">
+    <br>
+   
+
+
+      
+      
+     
+      
+
+<h1> Ajustes   </h1> 
+<hr class="hr1">
+<br>
+
+<h3> Informações Pessoais   </h3> 
+<hr class="hr1">
+<br>
+<form>
+    <div class="informacoes">
+        <div class="container">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="photo-wrap">
+                  <div class="profile-img">
+                    <i><img src="https://cdn-icons-png.flaticon.com/512/17/17004.png" alt=""></i>
+                  </div>
+                </div>
+              </div>
+              
+             <a href="editarPerfil.html" style="color: #000"> <i class='bx bx-edit'><h4> &ensp;Editar Foto</h4></i></a>
+            </div>
+    
+            <h4>E-mail: <font color=gray>Isabel.Euu@gmail.com</font></h4>
+            <h4>Nome:  <font color=gray>Isabel Morais Oliveira Carvalho</font></h4>
+            <h4>Usuários Bloqueados: <font color=gray>3 Usuários</font></h4>
+            <h4><a href="RdfEmail">Redefinir E-mail </a></h4>
+            <h4><a href="RdfSenha">Redefinir Senha </a></h4>
+            <h4><a href="sair.html"><i class='bx bx-log-out' style='color:#3cb371'></i><font color=#3CB371>Sair</font></a></h4>
+            <h4><a href="excluir.html"><i class='bx bxs-error-alt' style='color:#b22222'></i> <font color=#B22222>Excluir Conta</font></a></h4>
+            <br>
+          
+         
+        </div>
+</div>
+</form>
+
+<h3> Notificação  </h3> 
+<hr class="hr1">
+<br>
+<form>
+    <h4>Lembretes</h4> &ensp;
+    <label class="label">
+        <div class="toggle">
+          <input class="toggle-state" type="checkbox" name="check" value="check" />
+          <div class="indicator"></div>
+        </div>
+      </label> &ensp;
+      <h4>Mensagens</h4> &ensp;
+      <label class="label">
+        <div class="toggle">
+          <input class="toggle-state" type="checkbox" name="check" value="check" />
+          <div class="indicator"></div>
+        </div>
+      </label>
+    
+</form>
+<br>
+<h3> Ajuda  </h3> 
+<hr class="hr1">
+<br>
+<h4><i class='bx bxs-phone'></i><font color=black>Contato: <a href="">SmartStudies@gmail.com</a></font></h4>
+
+
+<!-- jQuery CDN -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </section>
+  
+
+ 
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+
+
+
+<script src="js/areaUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 3%;
+  font-family: "Poppins" , sans-serif;
+}
+
+.sidebar{
+  position: fixed;
+  left: 0.5%;
+  top: 0;
+  height: 100%;
+  width: 75px;
+  background: #4DC1BD;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.open{
+  width: 230px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+.sidebar input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #4DC1BD;
+}
+.sidebar.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #68cac2;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+.sidebar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+
+.sidebar li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+
+.home-section{
+  position: relative;
+  background: #fff;
+  min-height: 100vh;
+  top: 0;
+  left: 150px;
+  width: calc(100% - 150px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home-section .text{
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 18px
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+
+/* Pesquisaa */
+
+input {
+    background: none;
+    border: 0;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .search {
+    background: #ACE1FE;
+    border-radius: 10px;
+    display: flex;
+    height: 35px;
+    width: 50%;
+  }
+  .form input[type='search'] {
+    width: 50%;
+    padding: 0 5px 0 0;
+  }
+  .form input[type='submit'] {
+    background-image: url('https://cdn.rawgit.com/marcobiedermann/playground/master/ui/search/simple-search-bar/dist/assets/images/magnifier.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    order: -1;
+    text-indent: -999px;
+    width: 50px;
+  }
+  f{
+    color: #000000;
+  }
+
+/* Card PROFILE */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+	--xCard : 0;
+	--yCard : 0;
+}
+
+
+.container .card-wrapper{
+	margin:0px auto;
+	width:100%;
+	display:flex;
+	justify-content:left;
+	align-items:left;
+	flex-wrap:wrap;
+	padding:20px 0px;
+	
+}
+
+.container .card-wrapper .title-box{
+	width:100%;
+	max-width:320px;
+	min-height:120px;
+	margin-left:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.container .card-wrapper .title-box p{
+	font-size:40px;
+	color:#4d4d4d;
+	font-weight:bold;
+	transform:scale(1.6,1.6);
+	
+}
+.container .card-wrapper .title-box p span{
+	color:#fefefe;
+}
+
+
+
+
+.container .card-wrapper .card .photo-wrap{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	
+}
+
+.container .card-wrapper .card .photo-wrap .profile-img {
+	width:110px;
+	height:110px;
+	border-radius:100%;
+	background:linear-gradient(220deg, #FFF ,#fff);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.container .card-wrapper .card .photo-wrap .profile-img img{
+	width:100%;
+}
+
+
+.container .card-wrapper .card .button-wrap{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+/* carrossel */
+
+main {
+  height: 70vh;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+span {
+  font-size: x-large;
+}
+
+img {
+  box-shadow: 0 1px 2px #0003;
+  width: 90%;
+}
+
+.swiper {
+  height: 400px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .swiper {
+    height: 250px;
+  }
+}
+
+/* linha separatória */
+
+hr {
+  margin: 50px 0;
+}
+
+/* Bloco de Nota */
+
+body {
+    padding-top: 3rem;
+    margin: 200;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #fff;
+}
+
+:root {
+    --white: #fff;
+    --blue: #3263b6;
+}
+
+.adicionar {
+    position: fixed;
+    top: 1rem;
+    right: 15rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.nota {
+    background-color: var(--white);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin:30px 20px;
+    height: 400px;
+    width: 350px;
+    margin-left: 8rem;
+}
+
+.nota .configuracao {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.nota .configuracao button {
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.8rem;
+    border: none;
+}
+
+.nota textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    border: none;
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.main {
+    padding: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Texto Escondido */
+
+.mensagem{
+  display:none;
+  position:absolute;
+  top:0;
+  left:100%;
+  right:0;
+  margin: auto;
+  width:100px;
+  height:20px;
+  border:1px solid red;
+}

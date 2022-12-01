@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Estudos </title>
+    <link rel="stylesheet" href="lib/css/Estudos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/icon/favicon.ico">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body>
+
+ 
+
+
+  <button class="adicionar" id="adicionar">
+    <i class="fas fa-plus"></i> Nova Nota
+</button>
+
+<!-- <div class="nota">
+    <div class="configuracao">
+        <button class="editar">
+            <i class="fas fa-edit"></i>
+        </button>
+        <button class="deletar">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </div>
+    <div class="main hidden"></div>
+    <textarea></textarea>
+</div> -->
+
+<hr class="hr1">
+
+  <div class="sidebar">
+   
+   
+    <i class='bx bx-menu' id="btn" ></i>
+
+     
+  <br>
+  <br>
+    <ul class="nav-list">
+      <li>
+        <a href="AreaUsuario.html">
+            <i class='bx bxs-graduation'></i>
+          <span class="links_name">Área do Usuário</span>
+        </a>
+         <span class="tooltip">Área do Usuário</span>
+      </li>
+      <li>
+       <a href="Cronograma.html">
+         <i class='bx bxs-time' ></i>
+         <span class="links_name">Cronograma </span>
+       </a>
+       <span class="tooltip">Cronograma Escolar</span>
+     </li>
+     <li>
+       <a href="Estudos.html">
+        <i class='bx bx-notepad bx-tada' ></i>
+         <span class="links_name">Estudos</span>
+       </a>
+       <span class="tooltip">Estudos</span>
+     </li>
+     <li>
+       <a href="Chat.html">
+        <i class='bx bxs-message-rounded-dots'></i>
+         <span class="links_name">Chat Rápido</span>
+       </a>
+       <span class="tooltip">Chat Rápido</span>
+     </li>
+     <li>
+       <a href="Biblioteca.html">
+        <i class='bx bxs-book'></i>
+         <span class="links_name">Biblioteca </span>
+       </a>
+       <span class="tooltip">Biblioteca</span>
+     </li>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+     <li>
+        <a href="ajustes.html">
+            <i class='bx bxs-cog'></i>
+          <span class="links_name">Ajustes </span>
+        </a>
+        <span class="tooltip">Ajustes</span>
+      </li>
+      <li>
+        <a href="">
+          <i class='bx bx-log-out' style='color:#F50000' onclick="funcaoSair()"></i>
+          <span class="links_name"><f onclick="funcaoSair()">Sair</f></span>
+        </a>
+        <span class="tooltip">Sair</span>
+      </li>
+     
+      <script>
+        function funcaoSair()
+        {
+        alert("Eu sou um alert!");
+        }
+        </script>
+            
+        </ul>
+    </div>
+    
+
+    
+ 
+    
+
+        
+
+           
+            <!--https://cdnjs.com/-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.8/marked.min.js" integrity="sha512-OA0KzIFyfjEiECfdTeeqyDa++XmSLWyIBr8bWf2lpdv3qNr2TxpR9uaL2fKaz/Nz35kVVPEagjhWdWat/khWXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="lib/js/estudos.js"></script>
+            <script src="lib/js/script.js"></script>
+
+
+
+<!-- jQuery CDN -->
+<script src="lib/code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="lib/code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+ 
+  
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+
+
+
+</body>
+</html>
+
+
+

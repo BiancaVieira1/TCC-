@@ -1,0 +1,515 @@
+#+TITLE: Projecto Fin de Carrera (MindMapJS)
+#+STARTUP:  
+
+* Planificado
+** TODO Carga el valor de plegado
+** DONE Plegado de subramas.
+   CLOSED: [2013-08-08 jue 21:19]
+** DONE Salvar en el fichero el atributo plegado
+   CLOSED: [2013-08-28 mié 08:14]
+** DONE Undo Plegado y desplegado
+   CLOSED: [2013-08-27 mar 09:06]
+** DONE Ajustar los atajos de teclado a la nueva funcionalidad de plegado.
+   CLOSED: [2013-08-27 mar 08:31]
+** DONE Incluir un icono para poder plegar/desplegar con un click
+   CLOSED: [2013-08-27 mar 08:48]
+** DONE Tener en cuenta el desplazamiento y la escala a la hora de mostrar el editor
+   CLOSED: [2013-08-02 vie 11:58]
+** DONE Cambiar el modo de reparto de espacios por uno más equilibrado
+   CLOSED: [2013-07-24 mié 14:49]
+
+** DONE Ajustar la linea inferior cuando se edita el nodo
+   CLOSED: [2013-07-24 mié 14:49]
+   
+** DONE Rueda del ratón para hacer zoom
+   CLOSED: [2013-07-26 vie 10:24]
+
+
+** DONE El reparto debe realizarse en función del número de líneas del nodo
+   CLOSED: [2013-08-02 vie 09:43]
+
+** DONE Mover el escenario
+   CLOSED: [2013-08-02 vie 09:43]
+
+** DONE Crear una curva beizer para KineticJS
+   CLOSED: [2013-08-02 vie 09:44]
+
+
+** TODO Cambiar la ayuda de la página
+** TODO Implementación de un clase de notificación de mensajes. 
+   - Esta clase creará onfly una ventana con el mensaje a notificar. 
+   - Implementación de distintos tipos de notitifación.
+   - Mirar HTMLKickStart.
+** TODO Weinre 
+   - https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Gaia/Weinre_As_Remote_Debugger
+
+** TODO Undo movimiento
+** TODO Undo Nuevo
+
+** TODO Pellizco. Multitouch. 
+   - http://alxgbsn.co.uk/2011/08/16/event-delegation-for-touch-events-in-javascript/
+** TODO Mover el escenario con el Touch
+   - stage.getContent().addEventListener('touchmove', function(evt) {
+   -    stage.setPosition(touchX, touchY);
+   -    stage.getChildren().batchDraw();
+   - });
+
+** TODO ZoomIO-Out con pellizco 
+   - Ejemplo muy muy bueno http://sney2002.github.com/canvas-event-js/example-zoom.html
+   - En sistemas touch el zoom en un pellizco. 
+
+
+** TODO Zoom con el ratón de forma focalizada
+
+** TODO Ver que le pasa al intentar cargar un fichero en la tableta. 
+** TODO Búsqueda de nodos. 
+** TODO Opciones flotantes entorno al nodo seleccionado
+** TODO Unión de ramas 
+** TODO Enlaces entre ramas (nodo raiz oculto)
+** TODO Descripciones largas????
+** TODO Exportación a imagenes
+
+** TODO Exportar a Dot-language
+   - http://en.wikipedia.org/wiki/DOT_(graph_description_language)
+** TODO El tamaño de la fuente debe ir en proporción al ratioPixel
+** TODO javascript:void(null) en los enlaces
+
+** TODO Crear una página o un modo debug para la página
+
+
+* Pendiente de planificar
+** TODO Orientación de los nodos a la derecha o izquierda. 
+
+** TODO Implementar funciones para cambiar el estilo a los elementos del árbol
+** TODO Estudiar en profundidad como funciona un sistema ya implementado.
+** TODO Diseñar la página móvil
+** TODO Pensar como crear una presentación a partir del árbol
+   - reveal.js puede ser una opción
+
+** TODO Evaluar la posibilidad de utilizar Web workers 
+   - Utiliza Web Workers http://arborjs.org/ https://github.com/samizdatco/arbor
+
+** TODO Probar editores para interfaces
+   - http://pencil.evolus.vn/ 
+   - http://www.balsamiq.com/
+   
+** TODO Guardar los datos en el localStorage. Sesiones persistentes. (idea de Galacho).
+Yo sigo en mis trece: ¿sería mucha marimorena montar un workspace local que mantuviera 
+los mapas de un usuario - asumiendo la volatilidad de este sistema - y que uno pudiera 
+importar/exportar contenidos? (Utilizando Storage/IndexDB para guardar los árboles como 
+objetos, etc)
+
+
+
+* Pendiente de poner el WunderList
+
+* Realizado
+** DONE Plegado de subramas.
+   CLOSED: [2013-08-08 jue 21:19]
+** DONE Salvar en el fichero el atributo plegado
+   CLOSED: [2013-08-28 mié 08:14]
+** DONE Undo Plegado y desplegado
+   CLOSED: [2013-08-27 mar 09:06]
+** DONE Ajustar los atajos de teclado a la nueva funcionalidad de plegado.
+   CLOSED: [2013-08-27 mar 08:31]
+** DONE Incluir un icono para poder plegar/desplegar con un click
+   CLOSED: [2013-08-27 mar 08:48]
+** DONE Tener en cuenta el desplazamiento y la escala a la hora de mostrar el editor
+   CLOSED: [2013-08-02 vie 11:58]
+** DONE Cambiar el modo de reparto de espacios por uno más equilibrado
+   CLOSED: [2013-07-24 mié 14:49]
+
+** DONE Ajustar la linea inferior cuando se edita el nodo
+   CLOSED: [2013-07-24 mié 14:49]
+   
+** DONE Rueda del ratón para hacer zoom
+   CLOSED: [2013-07-26 vie 10:24]
+
+** DONE El reparto debe realizarse en función del número de líneas del nodo
+   CLOSED: [2013-08-02 vie 09:43]
+
+** DONE Mover el escenario
+   CLOSED: [2013-08-02 vie 09:43]
+
+** DONE Crear una curva beizer para KineticJS
+   CLOSED: [2013-08-02 vie 09:44]
+
+
+
+
+** DONE Función para saber el número de nodos hoja que tiene un árbol
+   CLOSED: [2013-07-24 mié 09:32]
+
+** DONE Aumentar el ancho del textArea mientras escribe
+   CLOSED: [2013-07-23 mar 11:51]
+
+
+** DONE Incluir tecla para Nuevo
+   CLOSED: [2013-07-22 lun 12:33]
+   - <Shift+n> puede ser una opción
+** DONE Bug: el undo no fuciona por la edición en el add de nodos
+   CLOSED: [2013-07-22 lun 12:22]
+** DONE Cuando se edita poner un película sobre el canvas.
+   CLOSED: [2013-07-19 vie 12:49]
+   - opacity = 0.5
+** DONE Aunmentar el textArea al introducir un salto de línea 
+   CLOSED: [2013-07-19 vie 09:29]
+   - parseFloat("1.1em") = 1.1
+
+** DONE Nuevos atajos de teclado + Teclas del Vi [7/7]
+   CLOSED: [2013-07-19 vie 08:48]
+   [X] <Tab> para moverse por lo niveles. Cuando llega a un nodo hijo crea un nuevo nodo hijo. Cuando llega a un nodo plegado lo despliega
+   [X] <Enter> para entrar y salir del modo de edición
+   [X] <Escape> para salir del modo de edición
+   [X] <Shift+Enter> para crear un hermano. Si esta en modo de edición Abrir nueva línea.
+   [X] <Shift+Tab> para crear hijo
+   [X] <Shift++> para plegar
+   [X] <Shift+-> para desplegar
+** DONE Control de edición con Enter. 
+   CLOSED: [2013-07-16 mar 09:17]
+** DONE Undo de Edición
+   CLOSED: [2013-07-16 mar 09:17]
+
+** DONE Probar la depuración con el crhome android
+   CLOSED: [2013-07-12 vie 19:49]
+   - http://www.android.es/herramientas-de-depuracion-remota-en-chrome-para-android.html#axzz2YoKXNQwV
+** DONE Cambiar la botonera se ve muy pequeña en tablets
+   CLOSED: [2013-07-12 vie 08:49]
+** DONE Implementar un Undo.
+   CLOSED: [2013-07-10 mié 09:10]
+   - https://coderwall.com/p/rdzera
+   - https://github.com/ArthurClemens/Javascript-Undo-Manager
+   - https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/command.html (patrón comando)
+
+** DONE Nuevo README.md explicando como crear el proyecto.
+   CLOSED: [2013-06-19 mié 08:29]
+
+** DONE Incorporar GruntJs para automatizar tareas
+   CLOSED: [2013-06-17 lun 11:53]
+
+** DONE JsHint para validar código
+   CLOSED: [2013-06-17 lun 11:52]
+** DONE Uglify como compresor de código JavaScript
+   CLOSED: [2013-06-17 lun 11:53]
+** DONE Exportar a freeMind 
+   CLOSED: [2013-06-14 vie 08:32]
+window.URL = window.URL || window.webkitURL;
+var blob = new Blob(['body { color: red; }'], {type: 'text/css'});
+var link = document.createElement('a');
+link.download="nombre.txt";
+link.href = window.URL.createObjectURL(blob);
+link.click();
+SEGUNDA FORMA
+http://stackoverflow.com/questions/7160720/create-a-file-using-javascript-in-chrome-on-client-side
+- librería alternativa para filesystem https://github.com/ebidel/idb.filesystem.js
+
+** DONE Modo Activo/Inactivo del controlador de teclado falla
+   CLOSED: [2013-06-14 vie 08:31]
+
+
+** DONE Documentar teclado.js
+   CLOSED: [2013-05-29 mié 11:31]
+
+** DONE Implementación de la primera interface
+   CLOSED: [2013-06-04 mar 08:58]
+
+** DONE Incluir enlace a Githup
+   CLOSED: [2013-06-04 mar 08:58]
+** DONE Incluir enlace al JSDOC. Documentación de la API.
+   CLOSED: [2013-06-04 mar 08:58]
+
+** DONE Incorporar Firebug lite para poder depurar 
+   CLOSED: [2013-06-04 mar 08:59]
+   - <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+
+** DONE El editor en formato TextArea queda un poco basto mejorarlo
+   CLOSED: [2013-06-05 mié 18:25]
+
+** DONE Poner la botonera en una hilera vertical de 2 en 2 botones
+   CLOSED: [2013-06-05 mié 18:50]
+
+** DONE Nueva idea por defecto editable
+   CLOSED: [2013-06-05 mié 19:06]
+
+** DONE Cuando se escala la posición del editor no es correcta
+   CLOSED: [2013-05-25 sáb 11:05]
+
+** DONE Funciones de colores (pasar a un modulo concreto
+   CLOSED: [2013-05-24 vie 12:17]
+
+** DONE Escalar. ZoomIn - ZoomOut y teclas de función
+   CLOSED: [2013-05-24 vie 12:18]
+** DONE Copiar las implementaciones al src como modulos del proyecto
+   CLOSED: [2013-05-24 vie 12:17]
+
+** DONE Pasar la funcionalidad de carga a MM
+   CLOSED: [2013-05-12 dom 13:19]
+
+** DONE Crear un nuevo render más optimo para un número grande de nodos
+   CLOSED: [2013-04-28 dom 11:50]
+
+** DONE Cambiar el editor del nodo por un input
+   CLOSED: [2013-05-06 lun 20:48]
+** DONE Ajustar la posición del editor
+   CLOSED: [2013-05-06 lun 20:48] DEADLINE: <2013-05-06 lun> SCHEDULED: <2013-03-11 lun>
+   - Parece que el problema proviene del group
+   - A lo mejor hay que pensar en quitar el group e implementar el render del nodo de otra forma
+** DONE Pasar los atajos de teclado a la librería MM
+   CLOSED: [2013-05-08 mié 09:48]
+
+** DONE Ver como poner el foco 
+   CLOSED: [2013-04-30 mar 11:47]
+   - No de ve claro desde que se ha introducido los colores.
+   - En el nuevo render puede ser un globo
+
+** DONE Añadir al manejador de eventos el evt.preventDefault();
+   CLOSED: [2013-05-08 mié 09:24] DEADLINE: <2013-05-07 mar>
+   - Comprobar funcionamiento y si funciona bien dejarlo
+   - También se puede combinar con event.stopPropagation();
+
+** DONE Incorporar colores aleatorios a los nodos
+   CLOSED: [2013-04-28 dom 11:50]
+
+** DONE Librería para carga de ficheros
+   CLOSED: [2013-04-22 lun 21:36] DEADLINE: <2013-04-27 sáb> SCHEDULED: <2013-03-11 lun>
+** DONE Prueba de carga de un MM de FreeMind
+   CLOSED: [2013-04-22 lun 21:36] DEADLINE: <2013-04-27 sáb> SCHEDULED: <2013-03-11 lun>
+   - Implementar un parse XML de FreeMind
+
+** DONE (Bug) Revisar los ejemplos que han dejado de funcionar
+   CLOSED: [2013-04-22 lun 17:39] DEADLINE: <2013-04-22 lun>
+
+** DONE (Bug) Al borrar el raíz y crear un nuevo árbol se rompe todo.
+   CLOSED: [2013-04-22 lun 18:45] DEADLINE: <2013-04-27 sáb>
+
+** DONE Implementar prueba de concepto con KineticJS [10/10]
+   CLOSED: [2013-04-22 lun 17:17]
+*** DONE Dibujar un nodo / texto
+    CLOSED: [2012-12-28 dom 19:48]
+*** DONE Ejemplo de funcionamiento del sistema de eventos
+    CLOSED: [2012-01-04 dom 20:59]
+*** DONE Hacer un nodo editable
+    CLOSED: [2013-01-07 dom 15:52]
+*** DONE Crear un clase para nodos
+    CLOSED: [2013-01-11 dom 19:52]
+*** DONE Ejemplo con multiples nodos
+    CLOSED: [2013-01-11 dom 19:55]
+*** DONE Dibujar una arista
+    CLOSED: [2013-01-25 vie 21:17]
+*** DONE Ejemplo con dos nodos y una arista
+    CLOSED: [2013-02-02 sáb 01:18]
+*** DONE Primer ejemplo completo con un mapa
+    CLOSED: [2013-02-07 jue 20:58]
+*** DONE interacción
+    CLOSED: [2013-03-17 dom 02:22] DEADLINE: <2013-03-17 dom> SCHEDULED: <2013-03-17 dom> 
+*** DONE Pruebas con eventos touch 
+    CLOSED: [2013-04-22 lun 17:17]
+** DONE Mejoras visuales el nodo
+   CLOSED: [2013-04-22 lun 17:15]
+** DONE Mejoras visuales las aristas
+   CLOSED: [2013-04-22 lun 17:15]
+
+** DONE bug en el test del processable. REVISAR.
+   CLOSED: [2013-04-13 sáb 16:07]
+
+** DONE Escenario ajustable al contenedor
+   CLOSED: [2013-04-22 lun 17:04]
+** DONE Crear una nueva capa para el grid
+   CLOSED: [2013-04-22 lun 17:04]
+** DONE Modificar el render para poder disponer de más de uno.
+   CLOSED: [2013-04-22 lun 17:05]
+
+** DONE Probar los ejemplos con ... [4/4]
+   CLOSED: [2013-03-17 dom 03:30] SCHEDULED: <2013-03-03 dom>
+*** DONE Google Chrome
+    CLOSED: [2013-01-13 dom 20:12]
+*** DONE Firefox
+    CLOSED: [2013-01-13 dom 19:58]
+*** DONE Safari
+    CLOSED: [2013-02-20 mié 19:18]
+*** DONE Internet Explorer 9 
+    CLOSED: [2013-03-12 mar 19:18]
+** DONE Crear libería para manejo de teclado [5/5]
+   CLOSED: [2013-03-17 dom 20:06]
+*** DONE Buscar constantes de teclado. Escape, Tabulador, Insert, etc.
+    CLOSED: [2013-01-13 dom 21:24]
+*** DONE Funciones para convertir de teclas valor a texto y viceversa
+    CLOSED: [2013-01-14 lun 21:13]
+*** DONE Implementar un manejador de atajos de teclado
+    CLOSED: [2013-01-20 dom 20:06]
+*** DONE Página para pruebas de atajos de teclado
+*** DONE Probrar en distintos navegadores (Safari, Chrome, Firefox, IE)
+    CLOSED: [2013-03-17 dom 20:06]
+
+** DONE El nodo que esta en modo edición debe tener el foco.
+   CLOSED: [2013-03-10 dom 02:46] DEADLINE: <2013-03-10 dom> SCHEDULED: <2013-03-10 dom>
+
+** DONE El el foco en el nodo con el click
+   CLOSED: [2013-03-10 dom 02:46] DEADLINE: <2013-03-10 dom> SCHEDULED: <2013-03-10 dom>
+
+** DONE Implementación de un test de rendimiento. 
+   CLOSED: [2013-03-10 dom 03:43] SCHEDULED: <2013-03-10 dom>
+   - Crear un MM con 100, 1000 y/o 10000 para ver como se comporta el sistema.
+
+** DONE Terminada la prueba de interacción.
+   CLOSED: [2013-03-17 dom 03:31]
+
+** DONE Permitir la opción de borrado de nodos
+   CLOSED: [2013-03-10 dom 01:14] DEADLINE: <2013-03-10 dom> SCHEDULED: <2013-03-10 dom>
+
+** DONE Incluir al procesable el retorno
+   CLOSED: [2013-03-03 dom 19:47] SCHEDULED: <2013-03-03 dom>
+   - El procesable se va a quedar sólo para el árbol. Mejor untilizar un patrón PubSub
+
+** DONE Ver un sistema de documentación para el código fuente
+   CLOSED: [2013-03-03 dom 19:48] SCHEDULED: <2013-03-03 dom>
+   - Hasta el momento el jsDoc parece campeón. Probar en el sistema en vivo.
+** DONE Documentar [7/7]
+   CLOSED: [2013-03-03 dom 19:36] 
+*** DONE arbol-n.js
+    CLOSED: [2013-03-03 dom 19:35] 
+*** DONE dom.js
+    CLOSED: [2013-03-03 dom 19:35] 
+*** DONE klass.js
+    CLOSED: [2013-03-03 dom 19:35] 
+*** DONE properties.js
+    CLOSED: [2013-03-03 dom 19:35] 
+*** DONE chain.js
+    CLOSED: [2013-03-03 dom 19:35] 
+*** DONE processable.js
+    CLOSED: [2013-03-03 dom 19:35] 
+*** DONE pubsub.js
+    CLOSED: [2013-03-03 dom 19:36] 
+
+** DONE Implementar el patrón PubSub para manejo de eventos
+   CLOSED: [2013-03-03 dom 19:35] SCHEDULED: <2013-03-03 dom> 
+
+** DONE El array de aristas se dispara no para de introducir más y más aristas.
+   CLOSED: [2013-03-03 dom 19:33] SCHEDULED: <2013-03-03 dom>
+
+** DONE Ajustar las aristas una vez terminada la edición
+   CLOSED: [2013-02-23 sáb 23:19] SCHEDULED: <2013-03-03 dom>
+** DONE Escalar el nodo una vez editado
+   CLOSED: [2013-02-23 sáb 22:02] SCHEDULED: <2013-03-03 dom>
+** DONE Arbol-N [4/4]
+   CLOSED: [2013-02-10 dom 02:03] SCHEDULED: <2013-01-26 sáb>
+*** DONE Primera implementación.
+    CLOSED: [2013-01-25 vie 18:25]
+*** DONE Pruebas sobre la librería.
+    CLOSED: [2013-01-27 dom 19:12]
+*** DONE Aplanar la lista de los recorridos.
+    CLOSED: [2013-01-25 vie 20:26]
+*** DONE Funciones y test de movimiento por el árbol: 
+    CLOSED: [2013-02-10 dom 01:46] 
+    - Buscar un elemento
+    - Profundidad
+    - PadreDe 
+** DONE Crear los tests para la Clase
+   CLOSED: [2013-02-02 sáb 01:18] SCHEDULED: <2013-01-30 mié>
+
+** DONE Ver como implementar un sistema de Test (mocha).
+   CLOSED: [2013-01-27 dom 18:30] SCHEDULED: <2013-01-28 lun>
+
+** DONE Instalar Internet Explorer en Linux
+   CLOSED: [2013-01-13 dom 20:05]
+   El Play on linux no tiene el Internet Explorer 9 para su instalación en linux.
+   Buscar alguna manera de instalarlo.
+** DONE Instalar el Safari en Linux
+   CLOSED: [2013-01-13 dom 19:47]
+
+** DONE Anteproyecto [8/8]
+   CLOSED: [2012-12-16 dom 12:32]
+*** DONE Mapa mental sobre el anteproyecto.
+    CLOSED: [2012-11-16 vie 21:02]
+*** DONE Titulo.
+    CLOSED: [2012-11-16 vie 21:02]
+*** DONE Introducción.
+    CLOSED: [2012-11-16 vie 21:02]
+*** DONE Objetivos.
+    CLOSED: [2012-11-16 vie 21:02]
+*** DONE Medios.
+    CLOSED: [2012-11-16 vie 21:02]
+*** DONE Etapas.
+    CLOSED: [2012-12-16 dom 12:32]
+*** DONE Modelo UML-WAE.
+    CLOSED: [2012-12-16 dom 12:32]
+*** DONE Medotología ágil.
+    CLOSED: [2012-12-16 dom 12:32]
+
+** DONE Crear la estructura de directorios del proyecto
+   CLOSED: [2012-11-10 sáb 21:02]  
+** DONE Crear este documento TODO
+   CLOSED: [2012-11-10 sáb 21:02] 
+** DONE Buscar Documentación general sobre JavaScript
+   CLOSED: [2012-11-11 dom 13:36] 
+** DONE Existe algún estandard sobre mapas mentales.
+   CLOSED: [2012-11-11 dom 13:37] 
+   - http://eric-blue.com/2007/03/24/a-call-to-action-the-need-for-a-common-mind-map-file-format/
+     En este blog el tal Eric se que queja y pone en claro por que
+     debe haber un formato standard para los mapas mentales.
+     Por lo que he podido comporbar no existe un estandard 
+     Sobre ellos, en el siguiente enlance ...
+   - http://www.mind-mapping.org/interoperability-of-mind-mapping-software/
+     Podemos ver como los distintos programas importan y/o 
+     exportar otros formatos de otras aplicaciones.
+** DONE Buscar documentación sobre herencia en JavaScript
+   CLOSED: [2012-11-11 dom 22:56] 
+ 
+
+
+
+* Sitios interesantes
+
+** Editores de mapas mentales
+*** http://www.text2mindmap.com/ Tiene una edición en texto muy rápida
+*** http://www.mindmeister.com/es/demo/225986033 editor de mapas muy bueno
+*** http://sourceforge.net/projects/freemind/
+
+** Librerias
+*** Eventos para canvas 
+    - http://sney2002.github.com/canvas-event-js/
+*** Gráfos
+    - https://github.com/anvaka/VivaGraphJS
+    - http://www.rubenswieringa.com/blog/interactive-mindmap (Lo idela es llegar a algo así. Hecho en Flex)
+    - https://github.com/kennethkufluk/js-mindmap
+    - Graphiz como soporte para representar mapas mentales?? http://www.emezeta.com/articulos/dibujar-grafos-o-estructuras-de-datos#axzz2C5UB2pvH
+    - Muy, muy buena. http://arborjs.org/ https://github.com/samizdatco/arbor
+    - Sencilla pero efectiva. https://github.com/dhotson/springy
+
+** Información sobre mapas mentales
+*** http://www.mind-mapping.org/ organización donde hay información general sobre mindmap
+
+** Formatos de ficheros
+*** Quién importa qué  http://www.mind-mapping.org/interoperability-of-mind-mapping-software/ 
+*** Necesidad de un formato común http://mindmappingsoftwareblog.com/the-need-for-a-common-file-format/
+*** http://eric-blue.com/2007/03/24/a-call-to-action-the-need-for-a-common-mind-map-file-format/
+
+** Ejemplos interesanes
+*** Pizarra. Pintar con el ratón http://www.esedeerre.com/ejemplo/20/182/html5-pizarra-con-canvas-y-javascript
+*** Manejo de fichero (lectura/escritura) 
+    - Quien soporta manejores de fichero http://www.html5rocks.com/en/features/file_access
+    - http://www.w3.org/TR/file-upload/
+    - http://www.w3.org/TR/2012/WD-FileAPI-20121025/
+    - http://www.w3.org/TR/2012/WD-file-system-api-20120417/
+    - http://www.html5rocks.com/en/tutorials/file/dndfiles/
+*** Grafo
+    - http://snipplr.com/view/1950/graph-javascript-framework-version-001/
+
+** Documentación de Fuentes / Manual de usuario
+*** Documentación de fuentes o manual de usuario
+    - http://sphinx-doc.org/domains.html#the-javascript-domain
+*** Documentación de fuentes 
+    - http://es.wikipedia.org/wiki/JSDoc
+
+** Otros
+*** Sitio que te indica quien soporta http://caniuse.com/
+
+** Herramientas
+*** Editor de prototipos webs: 
+    - http://pencil.evolus.vn/ 
+    - http://www.balsamiq.com/
+*** Para empaquetar aplicaciones JS + CSS + HTML5 para moviles. http://phonegap.com/
+
+
+** Bibliografia
+*** http://es.scribd.com/doc/91319761/Tesis-Valeria-de-Castro
