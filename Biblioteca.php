@@ -127,7 +127,7 @@
        <span class="tooltip">Estudos</span>
      </li>
      <li>
-       <a href="Chat.html">
+       <a href="chat/index.html">
         <i class='bx bxs-message-rounded-dots'></i>
          <span class="links_name">Chat Rápido</span>
        </a>
@@ -147,14 +147,14 @@
 
 
      <li>
-        <a href="ajustes.html">
+        <a href="ajustes.php">
             <i class='bx bxs-cog'></i>
           <span class="links_name">Ajustes </span>
         </a>
         <span class="tooltip">Ajustes</span>
       </li>
       <li>
-        <a href="login.html">
+        <a href="sair.php">
           <i class='bx bx-log-out' style='color:#141313' onclick="funcaoSair()"></i>
           <span class="links_name"><f onclick="funcaoSair()"> Sair</f></span>
         </a>

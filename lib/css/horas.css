@@ -1,0 +1,55 @@
+
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    padding: 30px;
+}
+
+.clock .box {
+    height: 140px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #56bbb2;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, .9);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.clock .box.seconds {
+    background-color: #107c97;
+}
+
+.clock span {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.clock span.time {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+    .clock .box {
+        height: 100px;
+        width: 95px;
+        margin-top: -15%;
+    }
+
+    .clock span {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .clock span.time {
+        font-size: 12px;
+    }
+
+}

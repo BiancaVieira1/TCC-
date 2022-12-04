@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title> Área Usuário </title>
     <link rel="stylesheet" href="lib/css/areaUsuario.css">
+    <link rel="stylesheet" href="lib/css/horas.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="images/icon/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
@@ -62,7 +63,7 @@
 
 
      <li>
-        <a href="ajustes.html">
+        <a href="ajustes.php">
             <i class='bx bxs-cog'></i>
           <span class="links_name">Ajustes </span>
         </a>
@@ -92,46 +93,7 @@
     <br>
     
     <h2> Bem-Vindo(a)</h2>
-      <br>
-      
-
-<main>
-  <span>Central Notícias Vestibulares </span>
-  <br>
-  <br>
-  <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="project-img">
-            <img src="https://www.mirassol.sp.gov.br/imagens/165089029262669634d62a0867587665.jpg" alt="Foto 01">
-          </div>
-          
-        </div>
-        <div class="swiper-slide">
-          <div class="project-img">
-            <img src="https://th.bing.com/th/id/R.10a81479558f6f71f6f3b1712b3d1bdb?rik=siqXcOp%2fMnH%2fqw&riu=http%3a%2f%2fvemprausp.usp.br%2fwp-content%2fuploads%2f2021%2f06%2fFUVEST-2022-calendario-e-livros.png&ehk=W4cOPHemLaZWy4k2Vz0hVu5MPV7czZ%2bHSnhROmMRTO8%3d&risl=&pid=ImgRaw&r=0" alt="Foto 02">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="project-img">
-            <img src="https://vestibulares2021.com/wp-content/uploads/2020/08/inscricao-vestibular-fuvest.jpg" alt="Foto 03">
-          </div>
-        </div>
-      </div>
-    
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-</main>
-
-
-
-<hr class="hr1">
-
-<br>
-<SCRIPT LANGUAGE="JavaScript">
+    <SCRIPT LANGUAGE="JavaScript">
   d = new Date();
   hour = d.getHours();
   if(hour < 5)
@@ -159,27 +121,70 @@
   }
   </SCRIPT>
 
+
+
+
+<main>
+  <span>Central Notícias Vestibulares </span>
+  <br>
+  <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="project-img">
+            <a href="https://www.usjt.br/" target="_blank">
+            <img src="https://www.sejabixo.com.br/wp-content/uploads/2021/09/vestibular-ujst.jpg" alt="Foto 01"> 
+      </a>
+          </div>
+          
+        </div>
+        <div class="swiper-slide">
+          <div class="project-img">
+            <a href="https://www.materdei.edu.br/pt/vestibular/" target="_blank">
+            <img src="https://www.materdei.edu.br/arquivos/media/vestibular/banner/banner-pg.-vestibular.png" alt="Foto 02" height="300px" width="300px">
+      </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="project-img">
+            <a href="https://fae.edu/vestibular/" target="_blank">
+            <img src="https://img.fae.edu/galeria/getImage/362/6381899464330752.png" alt="Foto 03">
+      </a>
+          </div>
+        </div>
+      </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</main>
+
+
+
+<div class="clock">
+        <div class="box">
+            <span id="hour">00</span>
+            <span class="time">Horas</span>
+        </div>
+        <div class="box">
+            <span id="minute">00</span>
+            <span class="time">Minutos</span>
+        </div>
+        <div class="box seconds">
+            <span id="seconds">00</span>
+            <span class="time">Segundos</span>
+        </div>
+    </div>
+
+
+
+
 <br>
 
 &ensp;
 
-<div>
-  <div class="relogio">
-    <div>
-        <span id="horas">00</span>
-        <span class="tempo">Horas</span>
-    </div>
 
-    <div>
-        <span id="minutos">00</span>
-        <span class="tempo">Minutos</span>
-    </div>
-
-    <div>
-        <span id="segundos">00</span>
-        <span class="tempo">Segundos</span>
-    </div>
-</div>
 
 
 <!-- jQuery CDN -->
@@ -189,14 +194,13 @@
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 
-<!-- Relogio -->
-<script src="lib/js/relogio.js"></script>
+<script src="lib/js/hora.js"></script>
 
 <!-- Calculadora -->
 <script src="lib/js/calc.js"></script>
   </section>
   
-
+  
  
 
   <script>

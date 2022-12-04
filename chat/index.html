@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickTalk</title>
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>Chat Rápido</title>
+    <link type="text/css" rel="stylesheet" href="../lib/css/areaUsuario.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link type="text/css" rel="stylesheet" href="style/homepage.css">
     <link type="text/css" rel="stylesheet" href="style/inbox.css">
     <link type="text/css" rel="stylesheet" href="style/chat.css">
@@ -18,9 +19,86 @@
 <body>
     <div id="loading">Loading&#8230;</div>
 
+    <div class="sidebar">
+   
+   
+        <i class='bx bx-menu' id="btn" ></i>
+
+     
+  <br>
+  <br>
+    <ul class="nav-list">
+      <li>
+        <a href="../AreaUsuario.php">
+            <i class='bx bxs-graduation'></i>
+          <span class="links_name">Área do Usuário</span>
+        </a>
+         <span class="tooltip">Área do Usuário</span>
+      </li>
+      <li>
+       <a href="../views/user/index.php">
+         <i class='bx bxs-time' ></i>
+         <span class="links_name">Cronograma </span>
+       </a>
+       <span class="tooltip">Cronograma Escolar</span>
+     </li>
+     <li>
+       <a href="../Estudos.php">
+        <i class='bx bxs-notepad'></i>
+         <span class="links_name">Estudos</span>
+       </a>
+       <span class="tooltip">Estudos</span>
+     </li>
+     <li>
+       <a href="chat/index.html">
+        <i class='bx bxs-message-rounded-dots bx-tada' style='color:#ffffff' ></i>
+         <span class="links_name">Chat Rápido</span>
+       </a>
+       <span class="tooltip">Chat Rápido</span>
+     </li>
+     <li>
+       <a href="../Biblioteca.php">
+        <i class='bx bxs-book'></i>
+         <span class="links_name">Biblioteca </span>
+       </a>
+       <span class="tooltip">Biblioteca</span>
+     </li>
+<br>
+<br>
+<br>
+<br>
+
+
+     <li>
+        <a href="../ajustes.php">
+            <i class='bx bxs-cog'></i>
+          <span class="links_name">Ajustes </span>
+        </a>
+        <span class="tooltip">Ajustes</span>
+      </li>
+      <li>
+        <a href="../sair.php">
+          <i class='bx bx-log-out' style='color:#141313' onclick="funcaoSair()"></i>
+          <span class="links_name"><f onclick="funcaoSair()"> Sair</f></span>
+        </a>
+        <span class="tooltip">Sair</span>
+      </li>
+     
+      <script>
+        function funcaoSair()
+        {
+        alert("Você voltará para a tela de login!");
+        }
+        </script>
+            
+    
+
+    </ul>
+  </div>
+
     <div id="inbox" class="column">
         <p class="title">Conversas</p>
-        <input type="text" maxlength="15" name="username" class="searchField" onkeyup="search()" placeholder="Pesquisar utilizador" />
+        <input type="text" maxlength="15" name="username" class="searchField" onkeyup="search()" placeholder="Pesquisar pessoa" />
         <div id="searchContainer"></div>
         <div class="container"></div>
     </div>
@@ -30,9 +108,7 @@
     <div id="profile" class="column">
         <p class="title">Perfil</p>
         <div class="container"></div>
-        <div class="menu">
-            <button onclick="logout()">Sair</button>
-        </div>
+        
     </div>
 
     <script>

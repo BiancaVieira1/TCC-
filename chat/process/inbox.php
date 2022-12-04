@@ -16,7 +16,7 @@
     $count = $result->num_rows;
 
     if ($count < 1) {
-        echo '<div class="empty"><p>Pesquise um utilizador e começe um chat!</p></div>';
+        echo '<div class="empty"><p>Pesquise um usuário para iniciar uma conversa!</p></div>';
     }
 
     while ($inbox = $result->fetch_assoc()) {

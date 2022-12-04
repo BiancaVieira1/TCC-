@@ -28,6 +28,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/css/cadastro.css">
     <title>Cadastro - Usuários</title>
+
+    <style>
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #20B2AA;
+  border: none;
+  color: white;
+  padding: 10px 200px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+    </style>
+
+
+
 </head>
 
 <body>
@@ -42,7 +58,7 @@
                         <h1>Cadastre-se</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="login.html">Login</a></button>
+                        <button><a href="login.php">Login</a></button>
                     </div>
                 </div>
 
@@ -75,8 +91,7 @@
                     </div>
 
                 </div>
-
-                <input type="submit" name="submit" id="submit" >
+                <input class="inputSubmit" type="submit" name="submit" value="Entrar">
             </form>
         </div>
     </div>

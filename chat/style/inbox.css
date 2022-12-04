@@ -1,4 +1,4 @@
-@import "global.css";
+
 
 #inbox input.searchField{
     display: block;
@@ -35,6 +35,7 @@
 #inbox #searchContainer div.row {
     display: block;
     cursor: pointer;
+    margin-right: 50%;
 }
 
 #inbox #searchContainer div.row img {

@@ -9,6 +9,7 @@
 <body>
 
 <div class="sidebar">
+ 
    
    
         <i class='bx bx-menu' id="btn" ></i>
@@ -39,7 +40,7 @@
        <span class="tooltip">Estudos</span>
      </li>
      <li>
-       <a href="../../Chat.html">
+       <a href="../../chat/index.html">
         <i class='bx bxs-message-rounded-dots'></i>
          <span class="links_name">Chat Rápido</span>
        </a>
@@ -59,14 +60,14 @@
 
 
      <li>
-        <a href="Ajustes.html">
+        <a href="../../ajustes.php">
             <i class='bx bxs-cog'></i>
           <span class="links_name">Ajustes </span>
         </a>
         <span class="tooltip">Ajustes</span>
       </li>
       <li>
-        <a href="../../login.php">
+        <a href="../../sair.php">
           <i class='bx bx-log-out' style='color:#141313' onclick="funcaoSair()"></i>
           <span class="links_name"><f onclick="funcaoSair()"> Sair</f></span>
         </a>
@@ -84,8 +85,12 @@
 
     </ul>
   </div>
-   
+   <br>
+  <h1 align="center"> Cronograma Escolar </h1>
+
 <div class="calendarUser"></div>
+
+
 
 <?php include(DIRREQ."lib/html/footer.php"); ?>
 
